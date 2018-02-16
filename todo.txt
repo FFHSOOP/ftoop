@@ -1,6 +1,22 @@
+ToDo
+- gradle build
+- gradle run
+- .gitignore for Build files
+- jUnit tests
+
+Zaehler.java
+- Implementieren Sie den Zaehler
+
+Speicher.java
+- Entfernen Sie den abstract modifier und implementieren Sie die fehlenden Methoden!
+
+Drucker.java
+- Auto-generated catch block
+
+ZaehlerDruckerTest.java
+- Fuegen Sie einen eigenen Test ein.
+
+
+DONE
 -git (public)
--gradle build
--gradle run
--.gitignore für Build files
--jUnit tests
--
+

@@ -1,6 +1,8 @@
 package producerconsumer;
 
-//TODO Entfernen Sie den abstract modifier und implementieren Sie die fehlenden Methoden!
+// TODO Entfernen Sie den abstract modifier und implementieren Sie die fehlenden Methoden!
+// Half done by SN
+
 public class Speicher implements SpeicherIf {
 
     private int wert;
