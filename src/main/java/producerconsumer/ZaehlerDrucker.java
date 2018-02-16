@@ -1,4 +1,4 @@
-package aufgabensammlung.producerconsumer;
+package producerconsumer;
 
 /**
  * 

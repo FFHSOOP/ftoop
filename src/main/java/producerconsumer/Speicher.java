@@ -1,4 +1,4 @@
-package aufgabensammlung.producerconsumer;
+package producerconsumer;
 
 //TODO Entfernen Sie den abstract modifier und implementieren Sie die fehlenden Methoden!
 public class Speicher implements SpeicherIf {
