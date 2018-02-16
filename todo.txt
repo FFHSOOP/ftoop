@@ -1,0 +1,6 @@
+-git (public)
+-gradle build
+-gradle run
+-.gitignore für Build files
+-jUnit tests
+-
