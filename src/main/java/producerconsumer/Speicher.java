@@ -10,17 +10,19 @@ public class Speicher implements SpeicherIf {
 
     @Override
     public int getWert() {
+        hatWert = false;
         return wert;
     }
 
     @Override
     public void setWert(int wert) {
+        hatWert = true;
         this.wert = wert;
     }
 
     @Override
     public boolean isHatWert() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        return hatWert;
     }
 
 }

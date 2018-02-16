@@ -7,16 +7,17 @@ ToDo
 Zaehler.java
 - Implementieren Sie den Zaehler
 
-Speicher.java
-- Entfernen Sie den abstract modifier und implementieren Sie die fehlenden Methoden!
-
 Drucker.java
 - Auto-generated catch block
 
 ZaehlerDruckerTest.java
 - Fuegen Sie einen eigenen Test ein.
 
+- wait(), notify() zeugs
 
 DONE
 -git (public)
+
+Speicher.java
+- Entfernen Sie den abstract modifier und implementieren Sie die fehlenden Methoden!
 
