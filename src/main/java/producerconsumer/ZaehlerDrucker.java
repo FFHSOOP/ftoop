@@ -26,7 +26,7 @@ public class ZaehlerDrucker {
 
 		// bissi warten, damit der Test funktioniert
 		Thread.sleep(5000);
-
+                d.interrupt();
 	}
 
 }

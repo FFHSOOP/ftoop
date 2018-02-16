@@ -7,8 +7,8 @@ repositories {
 }
 
 dependencies {
-    //Insert additional libraries here
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile fileTree(dir: 'lib', include: '*.jar')
+    testCompile 'junit:junit:4.12'
 }
 
 sourceSets {

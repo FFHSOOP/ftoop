@@ -16,16 +16,18 @@ public class Drucker extends Thread {
     @Override
     public void run() {
         while (true) {
+            int wert = speicher.getWert();
+            if(wert==-1){
+                return;
+            }
             try {
-                System.out.print(speicher.getWert() + " ");
+                System.out.print(wert + " ");
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 interrupt();
-                System.out.println("Drucker thread interrupted");
+                //System.out.println("Drucker thread interrupted");
                 break; //end loop
             }
         }
-
     }
-
 }

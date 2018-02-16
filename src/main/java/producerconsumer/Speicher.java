@@ -1,7 +1,6 @@
 package producerconsumer;
 
 import java.util.logging.Level;
-import java.util.logging.Logger;
 
 public class Speicher implements SpeicherIf {
 
@@ -18,8 +17,8 @@ public class Speicher implements SpeicherIf {
             try {
                 wait();
             } catch (InterruptedException ex) {
-                System.out.println("Wait on Speicher.getWert was interrupted");
-                Logger.getLogger(Speicher.class.getName()).log(Level.SEVERE, null, ex);
+                //System.out.println("Wait on Speicher.getWert interrupted");
+                return -1;
             }
         }
         hatWert = false;
@@ -37,8 +36,7 @@ public class Speicher implements SpeicherIf {
             try {
                 wait();
             } catch (InterruptedException ex) {
-                System.out.println("Wait on Speicher.setWert was interrupted");
-                Logger.getLogger(Speicher.class.getName()).log(Level.SEVERE, null, ex);
+                System.out.println("Wait on Speicher.setWert interrupted");
             }
         }
         hatWert = true;
@@ -54,5 +52,4 @@ public class Speicher implements SpeicherIf {
     public boolean isHatWert() {
         return hatWert;
     }
-
 }
