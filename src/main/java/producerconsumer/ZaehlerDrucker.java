@@ -15,7 +15,8 @@ public class ZaehlerDrucker {
 			System.exit(1);
 		}
 
-		Speicher s = null; // new Speicher();
+		//Speicher s = null; // new Speicher();
+		Speicher s = new Speicher();
 		Drucker d = new Drucker(s);
 		Zaehler z = new Zaehler(s, Integer.parseInt(args[0]),
 				Integer.parseInt(args[1]));

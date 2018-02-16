@@ -29,6 +29,18 @@ public class Zaehler extends Thread {
 	@Override
 	public void run() {
 		// TODO Implementieren Sie den Zaehler
+
+		int temp = this.min;
+		while (temp <= this.max && !this.speicher.isHatWert()) {
+			try {
+				this.speicher.setWert(temp);
+				temp = temp + 1;
+				Thread.sleep(100);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
 	}
 
 }
