@@ -20,8 +20,9 @@ public class Drucker extends Thread {
                 System.out.print(speicher.getWert() + " ");
                 Thread.sleep(100);
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
+                interrupt();
+                System.out.println("Drucker thread interrupted");
+                break; //end loop
             }
         }
 

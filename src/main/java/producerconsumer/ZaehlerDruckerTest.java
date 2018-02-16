@@ -1,6 +1,6 @@
 package producerconsumer;
 
-import org.junit.Test;
+/*import org.junit.Test;
 
 import student.TestCase;
 
@@ -15,3 +15,4 @@ public class ZaehlerDruckerTest extends TestCase {
 
 	// TODO Fuegen Sie einen eigenen Test ein.
 }
+*/
