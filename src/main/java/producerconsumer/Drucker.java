@@ -15,7 +15,7 @@ public class Drucker extends Thread {
      */
     @Override
     public void run() {
-        while (this.speicher.isHatWert()) {
+        while (true) {
             try {
                 System.out.print(speicher.getWert() + " ");
                 Thread.sleep(100);
