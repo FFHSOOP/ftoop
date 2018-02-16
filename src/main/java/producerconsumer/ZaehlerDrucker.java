@@ -15,7 +15,6 @@ public class ZaehlerDrucker {
 			System.exit(1);
 		}
 
-		//Speicher s = null; // new Speicher();
 		Speicher s = new Speicher();
 		Drucker d = new Drucker(s);
 		Zaehler z = new Zaehler(s, Integer.parseInt(args[0]),
@@ -26,7 +25,7 @@ public class ZaehlerDrucker {
 
 		// bissi warten, damit der Test funktioniert
 		Thread.sleep(5000);
-                d.interrupt();
+        d.interrupt();
 	}
 
 }

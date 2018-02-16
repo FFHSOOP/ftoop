@@ -17,7 +17,7 @@ public class Drucker extends Thread {
     public void run() {
         while (true) {
             int wert = speicher.getWert();
-            if(wert==-1){
+            if(wert == -1){
                 return;
             }
             try {
@@ -25,8 +25,7 @@ public class Drucker extends Thread {
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 interrupt();
-                //System.out.println("Drucker thread interrupted");
-                break; //end loop
+                break;
             }
         }
     }
