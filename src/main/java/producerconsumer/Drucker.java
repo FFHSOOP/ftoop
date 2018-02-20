@@ -18,11 +18,13 @@ public class Drucker extends Thread {
         while (!speicher.isLast()) {
             int wert = speicher.getWert();
             try {
+                if (wert<0) break;
                 System.out.print(wert + " ");
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 break;
             }
         }
+        //System.out.print("drucker over");
     }
 }

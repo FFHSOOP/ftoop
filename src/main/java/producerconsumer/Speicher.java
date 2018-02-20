@@ -14,6 +14,7 @@ public class Speicher implements SpeicherIf {
     public synchronized int getWert() {
         while(!hatWert){
             try {
+                if(isLast) return -1;
                 wait();
             } catch (InterruptedException ex) {
                 break;
@@ -21,7 +22,7 @@ public class Speicher implements SpeicherIf {
         }
         int tmp = wert; //Make shure that Zaehler does not overwrite the value
         hatWert = false;
-        notifyAll(); //Wake up threads
+        notify(); //Wake up threads
         return tmp;
     }
 
@@ -40,7 +41,7 @@ public class Speicher implements SpeicherIf {
         }
         this.wert = wert;
         hatWert = true;
-        notifyAll(); //Wake up threads
+        notify(); //Wake up threads
     }
 
     /**

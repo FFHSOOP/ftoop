@@ -23,7 +23,10 @@ public class ZaehlerDrucker {
         d.start();
 
         // bissi warten, damit der Test funktioniert
-        //Thread.sleep(5000);
+        int max = Integer.parseInt(args[1]) * 200;
+        Thread.sleep(max);
+
+
     }
 
 }

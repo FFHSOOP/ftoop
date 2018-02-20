@@ -27,19 +27,26 @@ public class Zaehler extends Thread {
     public void run() {
         int temp = this.min;
         while (temp <= this.max && !this.speicher.isHatWert()) {
-            if (temp == this.max) {
-                
-            }
             try {
-                this.speicher.setWert(temp);
+				this.speicher.setWert(temp);
+
+				if (temp == this.max) {
+					while(this.speicher.isHatWert()) {
+						Thread.sleep(100);
+					}
+					speicher.setLast(true); //Markiert diesen Wert als den letzten
+                    break;
+				}
+
                 temp = temp + 1;
+
                 Thread.sleep(100);
             } catch (InterruptedException e) {
                 // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
-        speicher.setLast(true); //Markiert diesen Wert als den letzten
+        //System.out.print("zaehler over");
     }
 
 }
