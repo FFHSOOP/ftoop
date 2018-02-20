@@ -4,16 +4,8 @@ ToDo
 - .gitignore for Build files
 - jUnit tests
 
-Zaehler.java
-- Implementieren Sie den Zaehler
-
-Drucker.java
-- Auto-generated catch block
-
 ZaehlerDruckerTest.java
 - Fuegen Sie einen eigenen Test ein.
-
-- wait(), notify() zeugs
 
 DONE
 -git (public)
@@ -21,3 +13,10 @@ DONE
 Speicher.java
 - Entfernen Sie den abstract modifier und implementieren Sie die fehlenden Methoden!
 
+- wait(), notify() zeugs
+
+Zaehler.java
+- Implementieren Sie den Zaehler
+
+Drucker.java
+- Auto-generated catch block

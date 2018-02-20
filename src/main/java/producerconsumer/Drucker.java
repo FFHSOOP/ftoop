@@ -15,16 +15,12 @@ public class Drucker extends Thread {
      */
     @Override
     public void run() {
-        while (true) {
+        while (!speicher.isLast()) {
             int wert = speicher.getWert();
-            if(wert == -1){
-                return;
-            }
             try {
                 System.out.print(wert + " ");
                 Thread.sleep(100);
             } catch (InterruptedException e) {
-                interrupt();
                 break;
             }
         }
