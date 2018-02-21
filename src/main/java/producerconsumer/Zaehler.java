@@ -8,8 +8,8 @@ public class Zaehler extends Thread {
     /**
      *
      * @param s Das Speicherobject, das die aktuelle Zahl haelt.
-     * @param min Der Startwert für den Zaehler
-     * @param max Der Endwert für den Zaehler (einschliesslich)
+     * @param min Der Startwert fuer den Zaehler
+     * @param max Der Endwert fuer den Zaehler (einschliesslich)
      *
      */
     Zaehler(Speicher s, int min, int max) {
@@ -19,7 +19,7 @@ public class Zaehler extends Thread {
     }
 
     /**
-     * Diese Run Methode zählt den Wert in Speicher hoch - von min bis max
+     * Diese Run Methode zaehlt den Wert im Speicher hoch - von min bis max
      * (einschliesslich).
      *
      */
