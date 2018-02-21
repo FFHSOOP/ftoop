@@ -2,7 +2,7 @@ package producerconsumer;
 
 /**
  *
- * Der Aufruf benötigt zwei Parameter min und max - der Zaehler beginnt bei min
+ * Der Aufruf benoetigt zwei Parameter min und max - der Zaehler beginnt bei min
  * zu zaehlen und terminiert bei max.
  *
  */
