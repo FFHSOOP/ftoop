@@ -26,5 +26,6 @@ public class Drucker extends Thread {
             }
         }
         //System.out.print("drucker over");
+       // System.out.println(Thread.currentThread().getName());
     }
 }

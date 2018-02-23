@@ -47,6 +47,7 @@ public class Zaehler extends Thread {
             }
         }
         //System.out.print("zaehler over");
+       // System.out.println(Thread.currentThread().getName());
     }
 
 }
