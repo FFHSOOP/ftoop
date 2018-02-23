@@ -5,7 +5,7 @@ public class Drucker extends Thread {
     private Speicher speicher;
 
     Drucker(Speicher s) {
-        this.speicher = s;
+	this.speicher = s;
     }
 
     /**
@@ -15,17 +15,18 @@ public class Drucker extends Thread {
      */
     @Override
     public void run() {
-        while (!speicher.isLast()) {
-            int wert = speicher.getWert();
-            try {
-                if (wert<0) break;
-                System.out.print(wert + " ");
-                Thread.sleep(100);
-            } catch (InterruptedException e) {
-                break;
-            }
-        }
-        //System.out.print("drucker over");
-       // System.out.println(Thread.currentThread().getName());
+	while (!speicher.isLast()) {
+	    int wert = speicher.getWert();
+	    try {
+		if (wert < 0)
+		    break;
+		System.out.print(wert + " ");
+		Thread.sleep(100);
+	    } catch (InterruptedException e) {
+		break;
+	    }
+	}
+	// System.out.print("drucker over");
+	// System.out.println(Thread.currentThread().getName());
     }
 }

@@ -18,7 +18,7 @@ public class SpeicherTest {
      */
     @Test
     public void testGetWert() {
-//	fail("Not yet implemented");
+	// fail("Not yet implemented");
     }
 
     /**
@@ -26,7 +26,7 @@ public class SpeicherTest {
      */
     @Test
     public void testSetWert() {
-//	fail("Not yet implemented");
+	// fail("Not yet implemented");
     }
 
     /**
@@ -34,7 +34,7 @@ public class SpeicherTest {
      */
     @Test
     public void testIsHatWert() {
-//	fail("Not yet implemented");
+	// fail("Not yet implemented");
     }
 
     /**
@@ -42,7 +42,7 @@ public class SpeicherTest {
      */
     @Test
     public void testIsLast() {
-//	fail("Not yet implemented");
+	// fail("Not yet implemented");
     }
 
     /**
@@ -50,7 +50,7 @@ public class SpeicherTest {
      */
     @Test
     public void testSetLast() {
-//	fail("Not yet implemented");
+	// fail("Not yet implemented");
     }
 
 }

@@ -44,24 +44,21 @@ public class ZaehlerDrucker {
 	d.setName("druckerThread");
 	z.start();
 	d.start();
-	
+
 	ThreadGroup gruppe = Thread.currentThread().getThreadGroup();
 	int anzahlThreads = gruppe.activeCount();
 	threads = new Thread[anzahlThreads];
 	gruppe.enumerate(threads);
-	     
-	     
-	     
 
 	// bissi warten, damit der Test funktioniert
 	int max = wertMax * 200;
 	Thread.sleep(max);
 
-//	     Thread speicherThread = threads[1];
-//	     Thread druckerThread = threads[2];
-//	     System.out.println("laenge:" + threads.length);
-//	     System.out.println(threads[0].getName() + "," + threads[1].getName() + "," + threads[2].getName());
-//	     System.out.println(threads[0].getState() + "," + threads[1].getState() + "," + threads[2].getState());
+	// System.out.println("laenge:" + threads.length);
+	// System.out.println(threads[0].getName() + "," + threads[1].getName() + "," +
+	// threads[2].getName());
+	// System.out.println(threads[0].getState() + "," + threads[1].getState() + ","
+	// + threads[2].getState());
     }
 
 }
