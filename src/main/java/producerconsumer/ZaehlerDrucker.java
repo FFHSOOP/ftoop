@@ -53,12 +53,6 @@ public class ZaehlerDrucker {
 	// bissi warten, damit der Test funktioniert
 	int max = wertMax * 200;
 	Thread.sleep(max);
-
-	// System.out.println("laenge:" + threads.length);
-	// System.out.println(threads[0].getName() + "," + threads[1].getName() + "," +
-	// threads[2].getName());
-	// System.out.println(threads[0].getState() + "," + threads[1].getState() + ","
-	// + threads[2].getState());
     }
 
 }

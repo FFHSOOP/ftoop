@@ -79,4 +79,5 @@ public class Speicher implements SpeicherIf {
 	this.isLast = isLast;
 	notifyAll(); // benachrichtigt Threads
     }
+    
 }

@@ -41,12 +41,9 @@ public class Zaehler extends Thread {
 
 		Thread.sleep(100);
 	    } catch (InterruptedException e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 	    }
 	}
-	// System.out.print("zaehler over");
-	// System.out.println(Thread.currentThread().getName());
     }
 
 }
