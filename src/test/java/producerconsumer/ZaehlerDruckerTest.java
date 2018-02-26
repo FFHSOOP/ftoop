@@ -5,7 +5,7 @@ import org.junit.Test;
 import student.TestCase;
 
 /**
- * Test Klasse für das Prgoramm ZaehlerDrucker
+ * Test Klasse für das Programm ZaehlerDrucker
  * @author  Stefan Nyffenegger
  * @author  Marco Wyssmann
  * @author  Benjamin Steffen
