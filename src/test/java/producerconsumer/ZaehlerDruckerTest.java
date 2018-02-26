@@ -4,6 +4,14 @@ import org.junit.Test;
 
 import student.TestCase;
 
+/**
+ * Test Klasse für das Prgoramm ZaehlerDrucker
+ * @author  Stefan Nyffenegger
+ * @author  Marco Wyssmann
+ * @author  Benjamin Steffen
+ * @version 1.0
+ */
+
 public class ZaehlerDruckerTest extends TestCase {
 
     /**
@@ -36,10 +44,10 @@ public class ZaehlerDruckerTest extends TestCase {
 
 	for (Thread t : ZaehlerDrucker.threads) {
 
-	    if (t.getName() == "zaehlerThread") {
+	    if (t.getName().equals("zaehlerThread")) {
 		zaehlerThread = t;
 	    }
-	    if (t.getName() == "druckerThread") {
+	    if (t.getName().equals("druckerThread")) {
 		druckerThread = t;
 	    }
 

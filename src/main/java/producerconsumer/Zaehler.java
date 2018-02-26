@@ -1,5 +1,13 @@
 package producerconsumer;
 
+/**
+ * Zaehler Klasse zaehlt Wert im Speicher hoch
+ * @author  Stefan Nyffenegger
+ * @author  Marco Wyssmann
+ * @author  Benjamin Steffen
+ * @version 1.0
+ */
+
 public class Zaehler extends Thread {
 
     private Speicher speicher;

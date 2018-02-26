@@ -1,10 +1,27 @@
 package producerconsumer;
 
+/**
+ * Speicher Klasse haelt den Wert und bildet die Logikeinheit für die Klassen Drucker und Zaehler
+ * @author  Stefan Nyffenegger
+ * @author  Marco Wyssmann
+ * @author  Benjamin Steffen
+ * @version 1.0
+ */
+
 public class Speicher implements SpeicherIf {
 
-    private int wert; // aktuell im Speicher gehaltener Wert
-    private boolean hatWert = false; // true wenn ein nicht ausgelesener Wert vorhanden ist
-    private boolean isLast = false; // true wenn der Wert im Speicher der letzte Wert ist
+    /**
+     * aktuell im Speicher gehaltener Wert
+     */
+    private int wert;
+    /**
+     * true wenn ein nicht ausgelesener Wert vorhanden ist
+     */
+    private boolean hatWert = false;
+    /**
+     * true wenn der Wert im Speicher der letzte Wert ist
+     */
+    private boolean isLast = false;
 
     /**
      * Gibt den aktuell im Speicher gehaltenen wert zurueck
@@ -31,8 +48,7 @@ public class Speicher implements SpeicherIf {
     /**
      * Setzt den neuen Wert im Speicher
      * 
-     * @param wert
-     *            neuer Zaehlwert
+     * @param wert neuer Zaehlwert
      */
     @Override
     public synchronized void setWert(int wert) {
@@ -72,8 +88,7 @@ public class Speicher implements SpeicherIf {
      * Zeigt an, dass der letzte Wert erreicht ist und benachrichtigt die wartenden
      * Threads.
      * 
-     * @param isLast
-     *            bei true wird kein weiterer Wert folgen
+     * @param isLast bei true wird kein weiterer Wert folgen
      */
     public synchronized void setLast(boolean isLast) {
 	this.isLast = isLast;

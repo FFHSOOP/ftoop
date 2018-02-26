@@ -1,5 +1,13 @@
 package producerconsumer;
 
+/**
+ * Drucker Klasse gibt Wert aus Speicher aus
+ * @author  Stefan Nyffenegger
+ * @author  Marco Wyssmann
+ * @author  Benjamin Steffen
+ * @version 1.0
+ */
+
 public class Drucker extends Thread {
 
     private Speicher speicher;

@@ -1,10 +1,13 @@
 package producerconsumer;
 
 /**
- *
  * Der Aufruf benoetigt zwei Parameter min und max - der Zaehler beginnt bei min
  * zu zaehlen und terminiert bei max.
  *
+ * @author  Stefan Nyffenegger
+ * @author  Marco Wyssmann
+ * @author  Benjamin Steffen
+ * @version 1.0
  */
 public class ZaehlerDrucker {
 
@@ -13,6 +16,9 @@ public class ZaehlerDrucker {
     static Thread[] threads;
 
     public static void main(String[] args) throws InterruptedException {
+
+    // Verschiedene Tests bevor das eigentliche Programm initialisiert wird
+
 	if (args.length != 2) {
 	    System.out.println("Usage: ZaehlerDrucker <min> <max>");
 	    System.exit(1);
@@ -50,8 +56,8 @@ public class ZaehlerDrucker {
 	threads = new Thread[anzahlThreads];
 	gruppe.enumerate(threads);
 
-	// bissi warten, damit der Test funktioniert
-	int max = wertMax * 200;
+    // Wartezeit damit der Main Prozess nicht nach Initialisierung der Threads beendet wird
+    int max = wertMax * 200;
 	Thread.sleep(max);
     }
 
