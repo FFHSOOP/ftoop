@@ -1,11 +1,4 @@
 ToDo
-- gradle build
-- gradle run
-- .gitignore for Build files
-- jUnit tests
-
-ZaehlerDruckerTest.java
-- Fuegen Sie einen eigenen Test ein.
 
 DONE
 -git (public)
@@ -20,3 +13,11 @@ Zaehler.java
 
 Drucker.java
 - Auto-generated catch block
+
+- gradle build
+- gradle run
+- .gitignore for Build files
+- jUnit tests
+
+ZaehlerDruckerTest.java
+- Fuegen Sie einen eigenen Test ein.
